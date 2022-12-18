@@ -5,18 +5,15 @@ Created on 11:50:49 2020
 @author: ozcan
 """
 
+
 file = open(r'Musical_Instruments_5.json',"r")
 
 final_dict=[]
-totalLinesInInputFile=0
-
 true=True
 false=False
 for line in file:
     lineDictionary=eval(line)
     final_dict.append(lineDictionary)
-    totalLinesInInputFile+=1
-
 import pandas as pd
 import numpy as np
 df=pd.DataFrame(final_dict)
